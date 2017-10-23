@@ -6,7 +6,7 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	$message = nl2br($_POST['message']);
 	$to = "kulcsarrudolf@gmail.com";	
 	$from = $email;
-	$subject = 'Új üzenet - '.$name;
+	$subject = 'New message - '.$name;
 	$message = '<b>Name:</b> '.$name.' <br><b>Email:</b> '.$email.'<br><b>Tel:</b> '.$tel.'<br><br> <p>'.$message.'</p>';
 	$headers = "From: $from\n";
 	$headers .= "MIME-Version: 1.0\n";
