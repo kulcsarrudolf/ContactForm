@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+
+.contact{
+    background: #03C4A7;
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.contact h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact label{
+    display: block;
+    text-align: left;
+}
+
+.contact input, .contact textarea{
+    display: block;
+    width: 100%;
+    color: #000000;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contact textarea{
+    height: 185px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact #send{
+    background: #4C4C4C;
+    border: 0;
+    width: 200px;
+    padding: 5px;
+    margin: 15px auto;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid #4C4C4C;
+}
+
+.contact #send:hover{
+    border: 2px solid #ffffff;    
+}

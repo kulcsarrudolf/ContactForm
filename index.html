@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Itt lesz a leírás.">
+    <meta name="keywords" content="kulcsszavak">
+    <meta name="author" content="rudolfo">
+    <title>Contact</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="contact/contact.js"></script>
+    <script src="assets/ie-emulation-modes-warning.js"></script>
+    <script src="https://use.fontawesome.com/28a201bd0f.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Contact -->
+    <div class="container-fluid no-padding contact">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Contact</h1>
+                <form id="contact_form">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="name">Name:
+                            <input type="text" id="name" required>
+                        </label>
+
+                            <label class="email">Email:
+                            <input type="email" id="email" required>
+                        </label>
+
+                            <label class="tel">Tel:
+                            <input type="text" id="tel" required>
+                        </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="message">Message:
+                            <textarea id="message" required></textarea>
+                        </label>
+                        </div>
+                    </div>
+                    <input id="send" type="submit" value="Send"> <span id="status"></span>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/jquery.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
