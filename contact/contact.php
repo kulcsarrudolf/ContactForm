@@ -1,7 +1,7 @@
 <?php
 if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && isset($_POST['message']) ){
 	$name = $_POST['name'];
-    $email = $_POST['email'];
+	$email = $_POST['email'];
 	$tel = $_POST['tel'];    
 	$message = nl2br($_POST['message']);
 	$to = "kulcsarrudolf@gmail.com";	
