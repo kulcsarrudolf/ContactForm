@@ -12,7 +12,7 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	$headers .= "MIME-Version: 1.0\n";
 	$headers .= "Content-type: text/html; charset=iso-8859-1\n";
 	if( mail($to, $subject, $message, $headers) ){
-		echo "Message sent!
+		echo "Message sent!";
 	} else {
 		echo "Error!";
 	}
