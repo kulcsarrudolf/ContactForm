@@ -51,3 +51,7 @@
 .contact #send:hover{
     border: 2px solid #ffffff;    
 }
+
+.contact .err{
+    font-weight: bold;
+}

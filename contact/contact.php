@@ -4,6 +4,7 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	$email = $_POST['email'];
 	$tel = $_POST['tel'];    
 	$message = nl2br($_POST['message']);
+	
 	$to = "kulcsarrudolf@gmail.com";	
 	$from = $email;
 	$subject = 'New message - '.$name;
@@ -11,14 +12,14 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['tel']) && i
 	
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-	$headers .= 'From: "MEGAMUTARI" <'.$to.'>' . "\r\n";
+	$headers .= 'From: "My Website Contact Form" <'.$from.'>' . "\r\n";
 	$headers .= "Reply-To: ".$to."\r\n";
 	$headers .= "Return-Path: ".$to."\r\n";
 
 	if( mail($to, $subject, $message, $headers) ){
-		echo "Message sent!";
+		echo '<p class="err">Message sent!</p>';
 	} else {
-		echo "Error!";
+		echo '<p class="err">Error!</p>';
 	}
 }
 ?>
